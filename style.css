@@ -49,22 +49,26 @@ table {
 }
 
 
+/*my code*/
 
-/*MY CODE*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 html{
-    overflow-x: hidden;
-    color: white;
+    scroll-snap-type: y mandatory;
 }
 body{
     background: #111;
-    overflow-x: hidden;
-    padding-left: 27rem;
+    display: flex;
+    justify-content: center;
 }
-.main-content{
-    min-height: 100vh;
-    padding: 1rem;
-}
-/* The side navigation menu */
+
 header{
     position: fixed;
     top:0; left:0;
@@ -80,7 +84,7 @@ header{
 }
 
 header .main-nav{
-    width: 100%;
+    width: 2;
 }
 header .main-nav ul{
     list-style: none;
@@ -100,17 +104,40 @@ header .main-nav ul li a:hover{
     background: white;
     border: solid 2px;
     border-color: chocolate;
-
+    
+}
+.child{
+    min-height: 100vh;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    background: #111;
+    scroll-snap-align: start;
+    max-width: fit-content;
 }
 
-/* MainContent CSS*/
-.welcome-content{
+
+
+
+.maincontent{
+    margin-left:27rem;
+}
+
+
+
+
+/*client list*/
+.logos {
+    display: grid;
+    grid-template-rows:150px 150px 150px;
+    grid-template-columns: 270px 270px 270px;
+}
+
+.box {
+    background: #444;
+    border: 1px solid #555;
     display: flex;
-    justify-content:center;
-    flex-flow: column;
-    padding:0 15rem;
-}
-.welcome-content h2{
-    font-size: 2.5rem;
-    color: White;
-}
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+  }
