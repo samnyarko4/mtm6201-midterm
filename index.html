@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Nyarko Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
+    <header class="site-header" role="banner">
+        <a href="index.html"><img src="/images/pfppic.PNG" alt=""></a>
+        <div class="user">
+            <h1>
+                Samuel Nyarko
+            </h1>
+            <p>
+                Photogropher/Videogropher
+            </p>
+        </div>
+        <nav class="main-nav desktop mobile" role="navigation">
+            <ul>
+                <li> <a href="index.html">Home </a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="container">
-        <header class="site-header" role="banner">
-            <nav class="main-nav" role="navigation">
-                <ul>
-                   <li> <a href="#">Home </a></li>
-                   <li> <a href="about.html">About</a></li>
-                   <li> <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
     <main class="main-content">
         <div class="maincontent">
             <section class="child welcome">
-                <h2><span>Welcome to my page!<span></span></h2>
-                <p>Hello welcome to my website, where i like to display my photos and videos i have taken over the years. </p>
+                <div class="card">
+                    <h2>Welcome To My Portfolio</h2>
+                    <div class="container">
+                      <p>Hi, my name is Samuel Nyarko. I am a Photogropher and Videogropher based out of ottawa ontario.</p>
+                      <button>
+                          Learn More About Me
+                      </button>
+                    </div>
+                  </div>
             </section>
+
             <section class="child clients">
-                <h2>Here are some companies i have worked with in the past</h2>
+                <h2>Clients I have Worked With</h2>
                 <div class="logos">
-                    <div class="box">
+                    <div class="box1">
                     <picture>       
                             <source srcset="images/jzmedia270px.png,
                             images/jzmedia640.png 2x,
@@ -42,11 +61,11 @@
                             images/jzmedia2160.png 3x"
                     media="(max-width: 720px)" />
 
-                    <img src="images/jzmedia270px.png" alt="photo of museum">
+                    <img src="images/jzmedia270px.png" alt="photo of JZ Media">
                     </picture>
                     </div>
 
-                    <div class="box">
+                    <div class="box1">
                     <picture>
                             <source srcset="images/gebrand270.png,
                             images/gebrand640.png 2x,
@@ -58,29 +77,43 @@
                             images/museum-landscape2160.jpg 3x"
                     media="(max-width: 720px)" />
 
-                    <img src="images/gebrand270.png" alt="photo of museum">
+                    <img src="images/gebrand270.png" alt="photo of GE Brand">
+                    </picture>
+                    </div>
+                    
+                    
+                    <div class="box1">
+                    <picture>
+                            <source srcset="images/gebrand270.png,
+                            images/gebrand640.png 2x,
+                            images/gebrand720.png 3x"
+                    media="(max-width: 320px)" />
+    
+                            <source srcset="images/museum-landscape720.jpg,
+                            images/museum-landscape1440.jpg 2x,
+                            images/museum-landscape2160.jpg 3x"
+                    media="(max-width: 720px)" />
+
+                    <img src="images/lookerz270.png" alt="photo of Lookerz Brand">
                     </picture>
                     </div>
 
-                    <div class="box">
-                        <source srcset="images/museum-landscape320.jpg,
-                        images/museum-landscape640.jpg 2x,
-                        images/museum-landscape960.jpg 3x"
-                media="(max-width: 320px)" />
-  
-                        <source srcset="images/museum-landscape720.jpg,
-                        images/museum-landscape1440.jpg 2x,
-                        images/museum-landscape2160.jpg 3x"
-                media="(max-width: 720px)" />
-                    </div>
-
-                    <div class="box">200px x 200px</div>
-                    <div class="box">200px x 200px</div>
-                    <div class="box">200px x 200px</div>
+                    <div class="box"><img src="images/newspaper270.png" alt="newspaper logo"></div>
+                    <div class="box"><img src="images/turfgrass270.png" alt="turfgrass logo"></div>
+                    <div class="box"><img src="images/newzbeats270.png" alt="newzbeats logo"></div>
                 </div>
             </section>
+
             <section class="child gallery">
-                <p>3</p>
+                <div class="grid">
+                    <img src="images/gino.png" alt="photo 1">
+                    <img src="images/phresh.png" alt="photo 2">
+                    <img src="images/niko.png" alt="photo 3">
+                    <img src="images/nthn.png" alt="photo 4">
+                    <img src="images/shxmmy.png" alt="photo 5">
+                    <img src="images/silentz.png" alt="photo 6">
+                </div>
+                
             </section>
         </div>
         </main>

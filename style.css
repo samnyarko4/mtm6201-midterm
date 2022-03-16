@@ -59,14 +59,37 @@ table {
     padding: 0;
 }
 
+button {
+    background: transparent;
+    border:1px solid chocolate;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    transition: box-shadow 300ms ease-in, color 300ms ease-in-out;
+ }
+
+button:hover{
+    background-color: chocolate;
+    color: white;
+    box-shadow: 40px 40px 40px 40px chocolate inset;
+}
+
 
 html{
     scroll-snap-type: y mandatory;
+    font-family: 'Inter', sans-serif;
 }
 body{
-    background: #111;
+    width: auto;
+    background: #1a1a1a;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
+}
+
+.container{
+    margin-right: 2rem;
 }
 
 header{
@@ -74,8 +97,8 @@ header{
     top:0; left:0;
     z-index:1000;
     height:100%;
-    width:27rem;
-    background: #1a1a1a;
+    width:25rem;
+    background: #111;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,8 +106,29 @@ header{
     text-align: center;
 }
 
+header img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+header h1{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+header p{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: .5rem;
+}
+
 header .main-nav{
-    width: 2;
+    width: 100%;
 }
 header .main-nav ul{
     list-style: none;
@@ -93,15 +137,19 @@ header .main-nav ul{
 header .main-nav ul li a{
     text-decoration: none;
     display: block;
-    padding: 1rem;
+    padding: .5rem;
     margin: 1.5rem 0;
-    background: #333;
+    width: 20rem;
+    background: #1a1a1a;
     color: chocolate;
-    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
     border-radius: 1.5rem;
 }
 header .main-nav ul li a:hover{
-    background: white;
+    background: chocolate;
+    color: white;
     border: solid 2px;
     border-color: chocolate;
     
@@ -111,33 +159,296 @@ header .main-nav ul li a:hover{
     font-size: 2rem;
     display: grid;
     place-items: center;
-    background: #111;
+    background: #1a1a1a;
     scroll-snap-align: start;
-    max-width: fit-content;
+    margin-left: 20rem;
 }
 
 
 
 
 .maincontent{
-    margin-left:27rem;
+    margin-left:10rem;
+    width: auto;
 }
 
 
 
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: #111;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 10%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .container {
+    padding: 2px 5px;
+  }
+
+  main .card {
+      height: 60vh;
+      width: 60vw;
+  }
+
+  main .card button{
+      margin-top: 10rem;
+      margin-left: 2rem;
+      width: 20rem;
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+  }
+
+  main .card h2{
+      font-weight: 700;
+      color: white;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: solid 2px #1a1a1a;
+      padding: 30px 10px 10px 20px;
+  }
+main .card p{
+    color: white;
+    margin-left: 2rem;
+}
+
 
 /*client list*/
+
+main .clients h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
 .logos {
     display: grid;
     grid-template-rows:150px 150px 150px;
     grid-template-columns: 270px 270px 270px;
+    grid-row-gap: 2rem;
 }
 
-.box {
-    background: #444;
-    border: 1px solid #555;
+.box .box1{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #AAA;
   }
+
+
+/*Gallery Portion */
+main .gallery .grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    }
+
+  main .gallery .grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+  }
+
+
+/*About Page*/
+
+
+
+.location h2{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 1.5rem;
+}
+
+.education .card{
+    margin-left: 10rem;
+}
+
+
+.education .card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card h3{
+    color: white;
+    padding-bottom:2rem;
+    margin-left:1rem;
+    font-weight: 600;
+}
+
+.high-school{
+    border-bottom: 1px solid chocolate;
+}
+
+.college{
+    padding-top:1rem;
+}
+
+
+  /*Contact Form*/
+  .contact-container{
+      background: #111;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 8rem;
+      margin-left: 14rem;
+  }
+
+  .contact-container h2{
+      background: #111;
+      color: white;
+      font-size: 20px;  text-align: center;
+      font-weight: 700;
+      margin-bottom:3rem ;
+      margin-top: 2rem
+  }
+
+  .wrap{
+      
+      width: 100%;
+      display: grid;
+  }
+  .wrap .box{
+      width: 100%;
+      position: relative;
+      padding: 20px;
+  }
+
+.wrap .box input{
+    width: 100%;  
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid chocolate;
+    transition: 0.5s linear;
+}
+
+.wrap .box input:focus{
+    padding: 20px 10px;
+    background: chocolate;
+    margin-top: 10px;
+}
+
+.wrap .box input:valid{
+    padding: 20px 10px;
+    background: chocolate;
+    margin-top: 10px;
+}
+
+
+.wrap .box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding:20px;
+    transition: 0.5s linear;
+}
+
+.wrap .box input:focus ~ label{
+    padding:0
+}
+
+.wrap .box input:valid ~ label{
+    padding:0
+}
+
+.wrap .box textarea{
+    width: 100%;  
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid chocolate;
+    transition: 0.5s linear;
+    margin-bottom: 1.5rem;
+}
+
+.wrap .box textarea:focus{
+    padding: 20px 10px;
+    background: chocolate;
+    margin-top: 10px;
+}
+
+.wrap .box textarea:valid{
+    padding: 20px 10px;
+    background: chocolate;
+    margin-top: 10px;
+}
+
+.container input[type="submit"]{
+    background: transparent;
+    border:1px solid chocolate;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    transition: box-shadow 300ms ease-in, color 300ms ease-in-out;
+}
+
+.container input[type="submit"]:hover{
+    background: chocolate;
+    box-shadow: 40px 40px 40px 40px chocolate inset;
+}
+
+
+  /*Media Queery*/
+  @media (min-width:987px){
+      main .card button{
+          margin-top:5rem;
+      }
+  }
+
+  @media (min-width:910px){
+    main .card button{
+        margin-top:3rem;
+    }
+}
+
+@media (max-width:910px){
+    
+    main .card button{
+        margin-top:5rem;
+    }
+}
+
+@media (max-width:887px){
+    header{
+        position: fixed;
+        top:0; left:0;
+        z-index:1000;
+        height:100%;
+        width:18rem;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+      }
+
+      header .main-nav ul{
+        list-style: none;
+        padding:1rem .5rem ;
+    }
+
+      header .main-nav ul li a{
+        width: 15rem;
+        font-size: 25px;
+      }
+}
