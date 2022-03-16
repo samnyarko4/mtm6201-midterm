@@ -152,6 +152,7 @@ header .main-nav ul li a:hover{
     color: white;
     border: solid 2px;
     border-color: chocolate;
+    transition: box-shadow 300ms ease-in, color 300ms ease-in-out;
     
 }
 .child{
