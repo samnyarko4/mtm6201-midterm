@@ -260,7 +260,9 @@ main .gallery .grid {
 
 /*About Page*/
 
-
+.mobile-map{
+    display: none;
+}
 
 .location h2{
     color: white;
@@ -408,26 +410,27 @@ main .gallery .grid {
 
 
   /*Media Queery*/
-  @media (min-width:987px){
+  @media screen and (min-width:987px){
       main .card button{
           margin-top:5rem;
       }
   }
 
-  @media (min-width:910px){
+  @media screen and (min-width:910px){
     main .card button{
         margin-top:3rem;
     }
 }
 
-@media (max-width:910px){
+@media screen and (max-width:910px){
     
     main .card button{
         margin-top:5rem;
     }
 }
 
-@media (max-width:887px){
+@media screen and (max-width:887px){
+    /*Navigation*/
     header{
         position: fixed;
         top:0; left:0;
@@ -451,4 +454,82 @@ main .gallery .grid {
         width: 15rem;
         font-size: 25px;
       }
+      main .card button{
+        margin-top:3rem;
+    }
+    .child{
+        margin-left: 10rem;
+    }
+
+    /*client list*/
+    .logos{
+        grid-template-columns: 270px 270px;
+    }
+
+    /*About Section*/
+    .desktop-map{
+        display: none;
+    }
+    .mobile-map{
+        display: block;
+        margin-left: 15rem;
+    }
+
+    /*Contact Form*/
+    .contact-container{
+        margin-left: 10rem;
+    }
 }
+
+@media screen and (max-width:720px){
+    header{
+        position: fixed;
+        top:0; left:0;
+        z-index:1000;
+        height:100%;
+        width:15rem;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+      }    
+
+      header .main-nav ul{
+        padding:1rem 1.5rem ;
+    }
+
+      header .main-nav ul li a{
+        width: 12rem;
+        font-size: 20px;
+      }        
+      
+      main .card button{
+        margin-top:1.5rem;
+    }
+
+     /*client list*/
+     .logos{
+        grid-template-columns: 270px;
+    }
+
+    /*About Section*/
+    .mobile-map{
+        margin-left: 7rem;
+    }
+
+    .card h3{
+        font-size: 25px;
+        padding-left:1rem;
+    }
+    .card p{
+        font-size: 20px;
+    }
+
+     /*Contact Form*/
+     .contact-container{
+        margin-left: 7rem;
+    }
+}
+    
